@@ -1,10 +1,21 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-
+import Voice from '@react-native-voice/voice';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
+
+
+
+
+
 export default function TabTwoScreen() {
+  // React.useEffect(() => {
+  //   Voice.onSpeechStart = function (e) {
+  //     console.log(e, '?')
+  //   };
+  // }, [])
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tab Two</Text>
